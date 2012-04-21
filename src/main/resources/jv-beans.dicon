@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE components PUBLIC "-//SEASAR2.1//DTD S2Container//EN"
+	"http://www.seasar.org/dtd/components24.dtd">
+<components>
+    <!-- JvBeansContainer(バインディング情報保持コンポーネント) -->
+    <component name="jvBeansContainer" 
+        class="org.stormcat.jvbeans.jvlink.analyze.JvBeansContainer" instance="singleton">
+        <initMethod name="init">
+            <arg>"org.stormcat.jvbeans.jvlink.definitions.dto"</arg>
+        </initMethod>
+    </component>
+
+    <!--  JvBindingDtoFactory(バインディングDTO生成用ファクトリ) -->
+    <component name="jvBindingDtoFactory" 
+        class="org.stormcat.jvbeans.jvlink.analyze.JvBindingDtoFactory" instance="singleton">
+        <property name="jvBeansContainer"/>
+    </component>
+	
+    <!-- JvLinkManager(JV-Link APIを司るマネージャ) -->
+    <component name="jvLinkManager" 
+        class="org.stormcat.jvbeans.jvlink.JvLinkManagerImpl" instance="prototype" >
+        <property name="jvBeansContainer"/>
+        <property name="jvBindingDtoFactory"/>
+    </component>
+
+</components>

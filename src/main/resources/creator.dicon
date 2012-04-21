@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="Shift_JIS"?>
+<!DOCTYPE components PUBLIC "-//SEASAR2.1//DTD S2Container//EN"
+	"http://www.seasar.org/dtd/components21.dtd">
+<components>
+	<include path="convention.dicon"/>
+	<include path="customizer.dicon"/>
+	<component class="org.seasar.chronos.core.creator.TaskCreator"/>
+	<component class="org.seasar.chronos.core.creator.TriggerCreator"/>
+</components>

@@ -20,10 +20,10 @@ import java.io.BufferedWriter;
 
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang.StringUtils;
-import org.stormcat.commons.constants.Charset;
-import org.stormcat.commons.constants.FileExtension;
-import org.stormcat.commons.io.BufferedReaderUtil;
-import org.stormcat.commons.io.BufferedWriterUtil;
+import org.stormcat.jvbeans.common.constants.Charset;
+import org.stormcat.jvbeans.common.constants.FileExtension;
+import org.stormcat.jvbeans.common.io.BufferedReaderUtil;
+import org.stormcat.jvbeans.common.io.BufferedWriterUtil;
 import org.stormcat.jvbeans.config.DataOption;
 import org.stormcat.jvbeans.jvlink.JvComponentInjector;
 import org.stormcat.jvbeans.jvlink.JvLinkManager;
